@@ -1,4 +1,6 @@
-public class GreaterNumber {
+package controlStructure;
+
+public class GreaterNumber2 {
 
 
     public static void main(String[] args) {
@@ -11,8 +13,11 @@ public class GreaterNumber {
         {
             System.out.println("a is greater");
         }
-        else {
+        else if(a<b){
             System.out.println("b is greater");
+        }
+        else {
+            System.out.println("a & b are equal");
         }
     }
 }

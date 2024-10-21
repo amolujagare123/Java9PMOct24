@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.Scanner;
 
 public class AdditionInputFromConsole {
@@ -20,6 +22,6 @@ public class AdditionInputFromConsole {
 
         c = a + b;
 
-        System.out.println("Addition="+c);
+        System.out.println("basic.Addition="+c);
     }
 }
