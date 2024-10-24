@@ -1,30 +1,24 @@
 package Arrays;
 
-public class IntArrayDemo {
+public class IntArrayDemo2 {
 
     public static void main(String[] args) {
 
-        int[] a = new int[5];
-
-        a[0] = 34;
-        a[1] = 55;
-        a[2] = 99;
-        a[3] = 125;
-        a[4] = 111;
-
+        int[] a = {12,45,67,89,11,23,78,90,11,556,81};
+        
         int l = a.length;
 
         System.out.println("l="+l);
 
-        for(int x:a)
+       /* for(int x:a)
         {
             System.out.println(x);
-        }
+        }*/
 
-        /*for(int i=0;i<5;i++)
+        for(int i=0;i<a.length;i++)
         {
             System.out.println(a[i]);
-        }*/
+        }
 
        /* System.out.println(a[0]);
         System.out.println(a[1]);
