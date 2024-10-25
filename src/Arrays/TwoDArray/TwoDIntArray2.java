@@ -29,7 +29,10 @@ public class TwoDIntArray2 {
         int row = a.length;
         int col = a[0].length;
 
-      for(int i=0;i<a.length;i++) {
+        System.out.println("row="+row);
+        System.out.println("col="+col);
+
+        for(int i=0;i<a.length;i++) {
           for (int j = 0; j < a[0].length; j++) {
               System.out.print(a[i][j]+"\t");
           }
