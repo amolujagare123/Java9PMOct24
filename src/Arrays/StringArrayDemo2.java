@@ -6,6 +6,7 @@ public class StringArrayDemo2 {
 
         String[] stArr = {"Aarav", "isha", "Vihaan", "Priya", "Rohit"};
 
+        //stArr[i] - String
 
         for(int i=0;i< stArr.length;i++)
         {
