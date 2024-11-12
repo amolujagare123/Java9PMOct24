@@ -10,7 +10,8 @@ public class Casting {
         // another type then use that type into round brackets
         // in front of value tto be stored
         // this is known as type casting
-        // this can be done within same category (premitive/non-Primitive) of datatype
+        // this can be done within same category
+        // (premitive) of datatype
 
         System.out.println("c="+c);
     }

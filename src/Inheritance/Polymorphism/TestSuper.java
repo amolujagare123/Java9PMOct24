@@ -8,7 +8,7 @@ class Employee {
         System.out.println("empWork");
     }
 
-    void displayDetails()
+     void displayDetails(int x)
     {
         System.out.println("Inside Employee");
         System.out.println("salary="+salary);
@@ -24,7 +24,7 @@ class Programmer extends Employee {
      }
 
 
-    void displayDetails()
+    public void displayDetails()
     {
         System.out.println("Inside Programmer");
         System.out.println("salary="+salary);
@@ -64,10 +64,10 @@ public class TestSuper {
         Tester t = new Tester();
         t.testMethod();
 
-        Employee e1=new Programmer();
+        Employee e1 = new Programmer();
         // upcasting
 
-        e1.displayDetails();
+        e1.displayDetails(12);
 
     }
 }
