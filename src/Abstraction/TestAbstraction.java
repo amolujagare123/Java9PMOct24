@@ -11,7 +11,7 @@ abstract class Parent
     }
 }
 
-abstract class Child extends Parent
+class Child extends Parent
 {
 
     void start() {
@@ -35,7 +35,7 @@ public class TestAbstraction {
     public static void main(String[] args) {
        // Parent p = new Parent();
 
-        Child p = new Child2();
+        Parent p = new Child2();
         p.start();
         p.run();
         p.display();
