@@ -13,7 +13,11 @@ public class DateDemo2 {
         String dateStr = "11/20/2024";
 
         SimpleDateFormat sd = new SimpleDateFormat("MM/dd/yyyy");
+
+
         Date date = sd.parse(dateStr);
+
+
         System.out.println("dateStr="+dateStr);
         System.out.println("date="+date);
 
