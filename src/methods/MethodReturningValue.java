@@ -68,6 +68,10 @@ public class MethodReturningValue {
         double d1 = ob.doubleValue();
         System.out.println("d1="+d1);
 
+       // ss = ob.getMyString();
+
+
+
 
         String[] myStr = ob.getMyStringArray();
 
