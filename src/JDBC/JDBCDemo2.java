@@ -1,11 +1,8 @@
 package JDBC;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
-public class JDBCDemo1 {
+public class JDBCDemo2 {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
@@ -24,11 +21,18 @@ public class JDBCDemo1 {
 
         // 4. executing query
 
-        String sql = "INSERT INTO student VALUES (3, 'Ishaan', 'ME', 92)";
+        String sql = "select * from student where branch='ME'";
 
-        // insert /  update / delete - DML queries - Data manipulation language
+        // Select - DDL queries - Data Definition language
+        ResultSet rs = st.executeQuery(sql);
 
-        st.executeUpdate(sql);
+        while (rs.next())
+        {
+            System.out.print(rs.getInt("rno")+"\t");
+            System.out.print(rs.getString("name")+"\t");
+            System.out.print(rs.getString("branch")+"\t");
+            System.out.println(rs.getInt("marks"));
+        }
 
     }
 }
